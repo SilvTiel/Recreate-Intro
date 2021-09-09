@@ -1,4 +1,60 @@
 body{
     background-color:black;
-    color:white;
 }
+h1{
+    font-family:'cf_band_of_brothers_personaRg' ;
+    font-size:80px;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'cf_band_of_brothers_personaRg';
+    src: url('font/fon1/cfbandofbrotherspersonal-re-webfont.woff2') format('woff2'),
+         url('font/fon1cfbandofbrotherspersonal-re-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vendettaregular';
+    src: url('font/font2/endetta-webfont.woff2') format('woff2'),
+         url('font/font2/vendetta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'scala_sansbold_lf';
+    src: url('font/font3/scalasans-boldlf-webfont.woff2') format('woff2'),
+         url('font/font3/scalasans-boldlf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'scala_sanslight';
+    src: url('font/font3/scalasans-light-webfont.woff2') format('woff2'),
+         url('font/font3/scalasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'scala_sansregular';
+    src: url('font/font3/scalasans-regular-webfont.woff2') format('woff2'),
+         url('font/font3/scalasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
