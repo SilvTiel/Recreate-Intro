@@ -1,5 +1,8 @@
 body{
     background-color:black;
+    color:white;
+    margin:0px;
+    padding:0px;
 }
 h1{
     font-family:'cf_band_of_brothers_personaRg' ;
@@ -7,14 +10,113 @@ h1{
     color:white;
     text-align: center;
 }
+.color{
+    color:darkred;
+}
+header{
+    background-color:black;
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    text-align:center;
+    z-index:1;
+}
+.btn{
+    cursor:pointer;
+    width:150px;
+    margin:20px auto;
+    padding:5px 20px;
+    background-color:red;
+    position:absolute;
+    font-size:25px;
+}
+.btn:hover{
 
+}
 
+main{
+    position: fixed;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    background-color:black;
+}
+/* Afbeeldingen */
+/* 1 */
+.opstijgen{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: 1;
+}
+.opstijgen .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB1.jpg")center center no-repeat;background-size:cover;
+}
+/* 2 */
+.vliegen{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.vliegen .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB2.jpg")center center no-repeat;background-size:cover;
 
+}
+/* 3 */
+.springen{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.springen .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB3.jpg")center center no-repeat;background-size:cover;
 
+}
+/* 4 */
+.lucht{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.lucht .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB4.jpg")center center no-repeat;background-size:cover;
+}
 
-
-
-
+/* Fonts */
 @font-face {
     font-family: 'cf_band_of_brothers_personaRg';
     src: url('font/fon1/cfbandofbrotherspersonal-re-webfont.woff2') format('woff2'),
