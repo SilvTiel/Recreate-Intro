@@ -1,20 +1,24 @@
 body{
-    background-color:black;
+    /* background-color:black; */
     color:white;
     margin:0px;
     padding:0px;
+    
 }
 h1{
     font-family:'cf_band_of_brothers_personaRg' ;
     font-size:80px;
     color:white;
     text-align: center;
+    margin-top:150px;
 }
 .color{
-    color:darkred;
+    color:black;
+    letter-spacing: 25px;
 }
+
 header{
-    background-color:black;
+    background:url("../afbeeldingen/BOB-background.jpg")center center no-repeat;background-size:cover;
     position:fixed;
     left:0px;
     top:0px;
@@ -23,16 +27,52 @@ header{
     text-align:center;
     z-index:-1;
 }
-.btn{
-    cursor:pointer;
-    width:150px;
-    margin:20px auto;
-    padding:5px 20px;
-    background-color:red;
-    font-size:25px;
+.overlay{
+    background: rgba(0, 0, 0, 0.6);
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    position:fixed;
 }
-.btn:hover{
+.btn {
+	background:linear-gradient(to bottom, #f3eded 5%, #2e2e2e 100%);
+	background-color:#414141;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:9px 40px;
+	text-decoration:none;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #4d4d4d 5%, #c7c7c7 100%);
+	background-color:#4d4d4d;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
 
+a{
+    color:white;
+    text-decoration: none;
+    font-size:15px;
+}
+a:hover{
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+.extra-tekst{
+    position:fixed;
+    top:90%;
+    left:0px;
+    text-align:center;
+    width:100%;
 }
 
 main{
@@ -42,6 +82,24 @@ main{
     height:100%;
     width:100%;
     background-color:black;
+    color:white;
+
+}
+
+.einde{
+    color:white;
+    position:absolute;
+    left:0px;
+    top:50%;
+    text-align:center;
+    height:100%;
+    width:100%;
+}
+
+.einde .einde-tekst{
+    font-size:80px;
+    font-family:'cf_band_of_brothers_personaRg';
+    letter-spacing: 25px;
 }
 /* Afbeeldingen */
 /* 1 */
@@ -51,8 +109,9 @@ main{
     top:0;
     height:100%;
     width:100%;
-    z-index: 5;
+    z-index: 21;
     animation: opstijgen 3s;
+    animation-delay:5s;
     animation-fill-mode: forwards;
 }
 .opstijgen .image{
@@ -63,9 +122,34 @@ main{
     width:100%;
     background:url("../afbeeldingen/BOB1.jpg")center center no-repeat;background-size:cover;
 }
+.presents{
+    position: absolute;
+    left:0;
+    top:68%;
+    text-align:center;
+    height:100%;
+    width:100%;
+    z-index: 20;
+    animation: presents 8s;
+    animation-delay:0s;
+    animation-fill-mode: forwards;
+    font-family: "scala_sansregular";
+    font-size:50px;
+}
 @keyframes opstijgen {
     from {top: 0%}
     to {top: 100%}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
+}
+@keyframes presents{
+    0% {opacity:0}
+    10% {opacity:0}
+    50% {opacity:1}
+    70% {opacity:0}
+    100% {opacity: 0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
 }
 /* 2 */
 .vliegen{
@@ -74,9 +158,9 @@ main{
     top:0;
     height:100%;
     width:100%;
-    z-index: 4;
+    z-index: 19;
     animation: vliegen 5s;
-    animation-delay:5s;
+    animation-delay:9s;
     animation-fill-mode: forwards;
 }
 .vliegen .image{
@@ -87,11 +171,56 @@ main{
     width:100%;
     background:url("../afbeeldingen/BOB2.jpg")center center no-repeat;background-size:cover;
 }
+.bob{
+    position: absolute;
+    left:55%;
+    top:30%;
+    height:100%;
+    width:100%;
+    z-index: 18;
+    animation: bob 8s;
+    animation-delay:10s;
+    animation-fill-mode: forwards;
+}
+.bob-tekst{
+    font-family: "scala_sansregular";
+    font-size:40px;
+    color:red;
+}
+.bob-tekst-2{
+    font-family: "scala_sansregular";
+    font-size:60px;
+    color:white;
+    line-height: 0.8;
+    text-indent: 20px;
+}
+.bob-tekst-3{
+    font-family: "scala_sansregular";
+    font-size:60px;
+    color:white;
+    line-height: 1.5;
+    text-indent: -40px;
+}
+.bob-tekst-4{
+    font-family: "scala_sansregular";
+    font-size:60px;
+    color:white;
+    line-height: 1.5;
+}
 @keyframes vliegen {
-    0%{opacity:100%}
-    15% {opacity:50%}
-    30% {opacity:0%}
-    100% {opacity:0%}
+    0%{opacity:1}
+    15% {opacity:0.5}
+    30% {opacity:0}
+    100% {opacity:0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
+}
+@keyframes bob{
+    50% {opacity:1}
+    70% {opacity:0}
+    100% {opacity: 0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
 }
 
 /* 3 */
@@ -101,9 +230,9 @@ main{
     top:0;
     height:100%;
     width:100%;
-    z-index: 3;
+    z-index: 17;
     animation: springen 5s;
-    animation-delay:5s;
+    animation-delay:10s;
     animation-fill-mode: forwards;
 }
 .springen .image{
@@ -120,6 +249,8 @@ main{
     50% {transform: scale(1.5, 1.5)}
     50% {opacity: 1 }
     100%{opacity: 0}
+    99%{transform:scale(1.5 , 1.5)}
+    100% {transform: scale(0 , 0)}
 }
 /* 4 */
 .lucht{
@@ -128,9 +259,9 @@ main{
     top:0;
     height:100%;
     width:100%;
-    z-index: 2;
+    z-index: 16;
     animation: lucht 7s;
-    animation-delay:7s;
+    animation-delay:11s;
     animation-fill-mode: forwards;
 }
 .lucht .image{
@@ -142,9 +273,216 @@ main{
     background:url("../afbeeldingen/BOB4.jpg")center center no-repeat;background-size:cover;
 }
 @keyframes lucht {
-    from {transform: scale(0 , 0)}
-    to {transform: scale(1.5, 1.5)}
+    0% {transform: scale(0 , 0)}
+    50% {transform: scale(1.5, 1.5)}
+    100% {transform: scale(0 , 0)}
 }
+/* 5 */
+.land{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: 15;
+    animation: landing 5s;
+    animation-delay:17s;
+    animation-fill-mode: forwards;
+}
+.land .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB5.jpg")center center no-repeat;background-size:cover;
+}
+@keyframes landing {
+    0% {transform: scale(1 , 1)}
+    25% {transform: scale(1 , 1)}
+    50% {transform: scale(1.5, 1.5) ; opacity: 1}
+    99%{transform:scale(1.5 , 1.5)}
+    100%{opacity: 0 ; transform:scale(0 ,0)}
+}
+/* 6 */
+.rook1{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: 14;
+    animation: rook1 2s;
+    animation-delay:20s;
+    animation-fill-mode: forwards;
+}
+.rook1 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB6.jpg")center center no-repeat;background-size:cover;
+}
+@keyframes rook1{
+    50%{opacity:1}
+    100%{opacity:0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
+}
+/* 7 */
+.rook2{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: 13;
+    animation: rook2 2s;
+    animation-delay:21s;
+    animation-fill-mode: forwards;
+}
+.rook2 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/BOB7.jpg")center center no-repeat;background-size:cover;
+}
+@keyframes rook2{
+    50%{opacity:1}
+    100%{opacity:0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
+}
+/* 8 begin rakket*/
+.rakket1{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:12;
+    animation: rakket 500ms;
+    animation-delay:22500ms;
+    animation-fill-mode: forwards;
+}
+.rakket1 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid1.jpg")center center no-repeat;background-size:cover;
+}
+/* 9 */
+.rakket2{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:11;
+    animation: rakket 500ms;
+    animation-delay:23000ms;
+    animation-fill-mode: forwards;
+}
+.rakket2 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid2.jpg")center center no-repeat;background-size:cover;
+}
+/* 10 */
+.rakket3{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:10;
+    animation: rakket 500ms;
+    animation-delay:23500ms;
+    animation-fill-mode: forwards;
+}
+.rakket3 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid3.jpg")center center no-repeat;background-size:cover;
+}
+/* 11 */
+.rakket4{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:9;
+    animation: rakket 500ms;
+    animation-delay:24000ms;
+    animation-fill-mode: forwards;
+}
+.rakket4 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid4.jpg")center center no-repeat;background-size:cover;
+}
+/* 12 */
+.rakket5{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:8;
+    animation: rakket 500ms;
+    animation-delay:24500ms;
+    animation-fill-mode: forwards;
+}
+.rakket5 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid5.jpg")center center no-repeat;background-size:cover;
+}
+/* 13 */
+.rakket6{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:7;
+    animation: rakket 5s;
+    animation-delay:25000ms;
+    animation-fill-mode: forwards;
+}
+.rakket6 .image{
+    position:absolute;
+    left:0px;
+    top:calc(50% - 50%);
+    height:100%;
+    width:100%;
+    background:url("../afbeeldingen/vid6.jpg")center center no-repeat;background-size:cover;
+}
+@keyframes rakket{
+    0% {opacity:1}
+    100% {opacity:0}
+    99%{transform:scale(1 , 1)}
+    100% {transform: scale(0 , 0)}
+}
+
 
 /* Fonts */
 @font-face {
@@ -189,4 +527,3 @@ main{
     font-style: normal;
 
 }
-
