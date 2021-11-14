@@ -18,7 +18,7 @@ h1{
 }
 
 header{
-    background:url("../afbeeldingen/BOB-background.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB-background.jpg")center center no-repeat;background-size:cover;
     position:fixed;
     left:0px;
     top:0px;
@@ -120,7 +120,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB1.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB1.jpg")center center no-repeat;background-size:cover;
 }
 .presents{
     position: absolute;
@@ -169,7 +169,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB2.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB2.jpg")center center no-repeat;background-size:cover;
 }
 .bob{
     position: absolute;
@@ -241,7 +241,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB3.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB3.jpg")center center no-repeat;background-size:cover;
 
 }
 @keyframes springen {
@@ -270,7 +270,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB4.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB4.jpg")center center no-repeat;background-size:cover;
 }
 @keyframes lucht {
     0% {transform: scale(0 , 0)}
@@ -295,7 +295,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB5.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB5.jpg")center center no-repeat;background-size:cover;
 }
 @keyframes landing {
     0% {transform: scale(1 , 1)}
@@ -322,7 +322,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB6.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB6.jpg")center center no-repeat;background-size:cover;
 }
 @keyframes rook1{
     50%{opacity:1}
@@ -348,7 +348,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/BOB7.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/BOB7.jpg")center center no-repeat;background-size:cover;
 }
 @keyframes rook2{
     50%{opacity:1}
@@ -374,7 +374,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/vid1.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/vid1.jpg")center center no-repeat;background-size:cover;
 }
 /* 9 */
 .rakket2{
@@ -394,7 +394,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/vid2.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/vid2.jpg")center center no-repeat;background-size:cover;
 }
 /* 10 */
 .rakket3{
@@ -414,7 +414,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/vid3.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/vid3.jpg")center center no-repeat;background-size:cover;
 }
 /* 11 */
 .rakket4{
@@ -434,7 +434,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/vid4.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/vid4.jpg")center center no-repeat;background-size:cover;
 }
 /* 12 */
 .rakket5{
@@ -454,7 +454,7 @@ main{
     top:calc(50% - 50%);
     height:100%;
     width:100%;
-    background:url("../afbeeldingen/vid5.jpg")center center no-repeat;background-size:cover;
+    background:url("/afbeeldingen/vid5.jpg")center center no-repeat;background-size:cover;
 }
 /* 13 */
 .rakket6{
